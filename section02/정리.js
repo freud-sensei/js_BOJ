@@ -5,3 +5,10 @@
 // 객체 및 배열
 
 // 3. Spread(인수에 적용), Rest(매개변수에 적용) 연산자
+
+// 4. 객체 순회
+
+// 5. 배열 메서드
+// push, pop, shift, unshift, slice, concat
+// forEach, includes, indexOf, findIndex, find
+// filter, map, sort,
