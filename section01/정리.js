@@ -68,13 +68,26 @@ console.log(add1(1, 10));
 // 화살표 함수
 let add2 = (a, b) => a + b;
 console.log(add2(3, 6));
+console.log("------------")
 
 // 5. 콜백 함수
+function repeat(func, times) {
+    for (let i = 0; i < times; i++) {
+        console.log(func(i));
+    }
+}
+
+repeat((i) => i, 5);
 
 // 6. 스코프
 
 // 함수 내 함수, 반복문/조건문 내 함수의 스코프는?
+// 함수 내 변수: 지역 스코프
+// 반복문, 조건문 내 변수: 지역 스코프
+// 함수 내 함수: 지역 스코프
+// 반복문, 조건문 내 함수: 전역 스코프
 
-// 7. 객체
-
+// 7. 객체, 메서드
+let foo1 = { mandu: 30000, chicken: 5000, 'pizza chicken': 200, calc: () => "Hello!" };
+console.log(foo1.calc());
 // 메서드
