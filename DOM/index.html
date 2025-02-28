@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section is-flex is-justify-content-center">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="./pingpong.webp" alt="Ping Pong" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Ping Pong Score Keeper</p>
+                  </div>
+                </div>
+                <h1 class="title is-1 mb-3">
+                  <span id="p1Score">0</span> to <span id="p2Score">0</span>
+                </h1>
+                <p class="mb-3">Use the buttons below to keep score.</p>
+                <div class="field has-addons">
+                  <div class="control">
+                    <label for="vScore" class="button is-static"
+                      >Playing To</label
+                    >
+                  </div>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="number"
+                      name="vScore"
+                      id="vScore"
+                      min="1"
+                      value="5"
+                    />
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <div class="field has-addons is-flex is-flex-grow-1">
+                  <p class="control is-flex-grow-1">
+                    <button
+                      class="button is-primary is-fullwidth"
+                      id="p1Button"
+                    >
+                      +1 Player One
+                    </button>
+                  </p>
+                  <p class="control is-flex-grow-1">
+                    <button
+                      class="button is-warning is-fullwidth"
+                      id="p2Button"
+                    >
+                      +1 Player Two
+                    </button>
+                  </p>
+                  <p class="control is-flex-grow-1">
+                    <button class="button is-danger is-fullwidth" id="reset">
+                      Reset
+                    </button>
+                  </p>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
